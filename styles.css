@@ -227,6 +227,16 @@ body {
     font-weight: 400 !important;
 }
 
+/* Nuclear option: completely override any hover color for Quick Links */
+.sidebar .quick-links a:hover,
+.sidebar .quick-links a:focus,
+.sidebar .quick-links a:active,
+.sidebar .quick-links a:visited {
+    color: #000000e6 !important;
+    font-weight: 400 !important;
+    text-decoration: none !important;
+}
+
 .quick-links i {
     width: 20px;
     margin-right: 0.8rem;
@@ -565,4 +575,26 @@ a:focus, button:focus {
         flex-direction: column;
         box-shadow: none;
     }
+}
+
+/* FINAL OVERRIDE: Force Quick Links to never change color on hover */
+.sidebar .quick-links a:hover,
+.sidebar .quick-links a:focus,
+.sidebar .quick-links a:active,
+.sidebar .quick-links a:visited,
+.sidebar .quick-links a:link {
+    color: #000000e6 !important;
+    font-weight: 400 !important;
+    text-decoration: none !important;
+}
+
+/* Even more specific - target the exact HTML structure */
+.container .sidebar .quick-links a:hover,
+.container .sidebar .quick-links a:focus,
+.container .sidebar .quick-links a:active,
+.container .sidebar .quick-links a:visited,
+.container .sidebar .quick-links a:link {
+    color: #000000e6 !important;
+    font-weight: 400 !important;
+    text-decoration: none !important;
 }

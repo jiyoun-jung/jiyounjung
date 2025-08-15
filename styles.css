@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Global Link Styling */
+/* Global Link Styling - removed universal hover effect */
 a {
     color: #000000 !important;
     font-weight: 700 !important;
@@ -13,31 +13,19 @@ a {
     transition: color 0.3s ease;
 }
 
-a:hover {
-    color: #fe48d1 !important; /* Pink hover color */
-}
-
-/* Force override for all text links with higher specificity */
-body a,
-main a,
-section a,
-div a,
-p a,
-li a,
-.content-section a {
+/* Apply styling to main content links only */
+.content-section a,
+.content-section p a,
+.content-section li a {
     color: #000000 !important;
     font-weight: 700 !important;
     text-decoration: none !important;
     transition: color 0.3s ease;
 }
 
-body a:hover,
-main a:hover,
-section a:hover,
-div a:hover,
-p a:hover,
-li a:hover,
-.content-section a:hover {
+.content-section a:hover,
+.content-section p a:hover,
+.content-section li a:hover {
     color: #fe48d1 !important; /* Pink hover color */
 }
 
@@ -49,24 +37,19 @@ li a:hover,
     /* These will inherit from their specific styles */
 }
 
-/* Most aggressive override for all links */
-* a,
-* a:link,
-* a:visited,
-* a:active {
+/* Apply styling to main content links only */
+.content-section a,
+.content-section a:link,
+.content-section a:visited,
+.content-section a:active {
     color: #000000 !important;
     font-weight: 700 !important;
     text-decoration: none !important;
     transition: color 0.3s ease;
 }
 
-* a:hover {
+.content-section a:hover {
     color: #fe48d1 !important; /* Pink hover color */
-}
-
-/* Override universal selector specifically for Quick Links */
-* .quick-links a:hover {
-    color: #000000e6 !important;
 }
 
 body {

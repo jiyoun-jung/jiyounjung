@@ -44,7 +44,8 @@ li a:hover,
 /* Exclude specific elements that should keep their styling */
 .social-icons a,
 .cv-download-btn,
-.news-container a {
+.news-container a,
+.quick-links a {
     /* These will inherit from their specific styles */
 }
 
@@ -190,19 +191,26 @@ body {
 }
 
 .quick-links a {
-    color: #000000e6;
-    text-decoration: none;
+    color: #000000e6 !important;
+    text-decoration: none !important;
     display: flex;
     align-items: center;
     padding: 0.5rem;
     border-radius: 6px;
     transition: all 0.3s ease;
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 
 .quick-links a:hover {
     background-color: #f0f0f0;
-    color: #000000e6;
+    color: #000000e6 !important;
+}
+
+/* Override universal selector for Quick Links */
+* .quick-links a,
+* .quick-links a:hover {
+    color: #000000e6 !important;
+    font-weight: 400 !important;
 }
 
 .quick-links i {

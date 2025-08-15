@@ -307,8 +307,8 @@ body {
     margin: 1.5rem 0 0.75rem 0;
 }
 
-/* Special styling for research-related paragraphs */
-.content-section h4 + p {
+/* Utility: apply left accent border to any chosen paragraph */
+.content-section p.accent-paragraph {
     padding-left: 0.75rem;
     border-left: 3px solid #E6E0F0;
     margin-left: 0;

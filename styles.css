@@ -26,7 +26,7 @@ a {
 .content-section a:hover,
 .content-section p a:hover,
 .content-section li a:hover {
-    color: #fe48d1 !important; /* Pink hover color */
+    color: #6B25FA !important; /* Pink hover color */
 }
 
 /* Exclude specific elements that should keep their styling */
@@ -49,7 +49,7 @@ a {
 }
 
 .content-section a:hover {
-    color: #fe48d1 !important; /* Pink hover color */
+    color: #6B25FA !important; /* Pink hover color */
 }
 
 body {
@@ -309,9 +309,10 @@ body {
 
 /* Special styling for research-related paragraphs */
 .content-section h4 + p {
-    padding-left: 0.5rem;
+    padding-left: 0.75rem;
     border-left: 3px solid #E6E0F0;
-    margin-left: 0.5rem;
+    margin-left: 0;
+    margin-top: 0.25rem;
 }
 
 .content-section p {

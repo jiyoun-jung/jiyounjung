@@ -64,6 +64,11 @@ li a:hover,
     color: #fe48d1 !important; /* Pink hover color */
 }
 
+/* Override universal selector specifically for Quick Links */
+* .quick-links a:hover {
+    color: #000000e6 !important;
+}
+
 body {
     /* Current Font - Merriweather */
     font-family: 'Merriweather', 'Source Serif Pro', serif;
@@ -209,6 +214,15 @@ body {
 /* Override universal selector for Quick Links */
 * .quick-links a,
 * .quick-links a:hover {
+    color: #000000e6 !important;
+    font-weight: 400 !important;
+}
+
+/* Most specific override for Quick Links to ensure no hover color change */
+.sidebar .quick-links a,
+.sidebar .quick-links a:hover,
+.sidebar .quick-links a:focus,
+.sidebar .quick-links a:active {
     color: #000000e6 !important;
     font-weight: 400 !important;
 }

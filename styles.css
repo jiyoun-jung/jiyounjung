@@ -50,6 +50,21 @@ li a:hover,
     /* These will inherit from their specific styles */
 }
 
+/* Most aggressive override for all links */
+* a,
+* a:link,
+* a:visited,
+* a:active {
+    color: #000000 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}
+
+* a:hover {
+    color: #8B0000 !important; /* Dark burgundy */
+}
+
 body {
     /* Current Font - Merriweather */
     font-family: 'Merriweather', 'Source Serif Pro', serif;

@@ -281,6 +281,18 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* CV Link Styling */
+.quick-links a[href*="cv.pdf"] {
+    color: #000000 !important;
+    font-weight: 700 !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.quick-links a[href*="cv.pdf"]:hover {
+    color: #8B0000 !important; /* Dark burgundy */
+}
+
 /* News Section */
 .news-container {
     max-height: 400px;

@@ -3,7 +3,7 @@ markdown: kramdown
 permalink: pretty
 # If this is a project site (not username.github.io), set baseurl: 
 baseurl: ""   # leave empty for custom domain / user site
-url: "https://jiyounjung.com"       # primary site URL for absolute URLs
+url: "https://www.jiyounjung.com"       # primary site URL for absolute URLs
 exclude:
   - README.md
   - LICENSE

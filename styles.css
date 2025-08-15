@@ -1280,28 +1280,7 @@ a:focus, button:focus {
     }
 }
 
-/* Portfolio Section */
-.portfolio-section {
-    margin-top: 4rem;
-    padding: 2rem;
-    background: #f8f9fa;
-    border-radius: 16px;
-    border: 1px solid #e9ecef;
-}
-
-.portfolio-section h3 {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 1rem;
-}
-
-.portfolio-section p {
-    color: #555;
-    margin-bottom: 2rem;
-    line-height: 1.6;
-}
-
+/* PDF Viewer Styles */
 .pdf-viewer {
     margin-bottom: 1.5rem;
     border-radius: 8px;
@@ -1314,44 +1293,15 @@ a:focus, button:focus {
     border: none;
 }
 
-.download-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: #6B25FA;
-    color: white !important;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    text-decoration: none !important;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.download-btn:hover {
-    background: #4a1d8f;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(107, 37, 250, 0.3);
-    color: white !important;
-}
-
-/* Responsive Design for Portfolio Section */
+/* Responsive Design for PDF Viewer */
 @media (max-width: 768px) {
     .pdf-viewer iframe {
         height: 400px;
-    }
-    
-    .portfolio-section {
-        padding: 1.5rem;
-        margin-top: 3rem;
     }
 }
 
 @media (max-width: 480px) {
     .pdf-viewer iframe {
         height: 300px;
-    }
-    
-    .portfolio-section {
-        padding: 1rem;
     }
 }

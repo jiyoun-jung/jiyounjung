@@ -188,6 +188,17 @@ body {
     transform: translateY(-2px);
 }
 
+.social-icon-svg {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0.6);
+    transition: filter 0.3s ease;
+}
+
+.social-icons a:hover .social-icon-svg {
+    filter: brightness(0.4);
+}
+
 /* Main Content */
 .main-content {
     flex: 1;

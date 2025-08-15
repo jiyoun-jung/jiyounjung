@@ -1120,9 +1120,10 @@ a:focus, button:focus {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin: 3rem 0;
+    max-width: 100%;
 }
 
 .gallery-item {
@@ -1132,6 +1133,8 @@ a:focus, button:focus {
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: white;
+    width: 100%;
+    max-width: 100%;
 }
 
 .gallery-item:hover {
@@ -1141,9 +1144,10 @@ a:focus, button:focus {
 
 .gallery-image {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
     transition: transform 0.3s ease;
+    display: block;
 }
 
 .gallery-item:hover .gallery-image {
@@ -1187,19 +1191,19 @@ a:focus, button:focus {
 /* Responsive Design for Gallery */
 @media (max-width: 1024px) {
     .gallery-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
 }
 
 @media (max-width: 768px) {
     .gallery-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: 1fr;
         gap: 1.5rem;
     }
     
     .gallery-image {
-        height: 200px;
+        height: 180px;
     }
     
     .gallery-intro {
@@ -1220,7 +1224,7 @@ a:focus, button:focus {
     }
     
     .gallery-image {
-        height: 180px;
+        height: 160px;
     }
     
     .gallery-caption {

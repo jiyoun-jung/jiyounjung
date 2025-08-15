@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-    color: #fe48d1 !important; /* Pink color */
+    color: #8B0000 !important; /* Dark burgundy */
 }
 
 /* More specific selectors to ensure override */
@@ -34,7 +34,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 p a:hover,
 li a:hover,
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-    color: #fe48d1 !important; /* Pink color */
+    color: #8B0000 !important; /* Dark burgundy */
 }
 
 /* Exclude specific elements that should keep their styling */
@@ -59,7 +59,7 @@ body a:hover,
 main a:hover,
 section a:hover,
 div a:hover {
-    color: #fe48d1 !important; /* Pink color */
+    color: #8B0000 !important; /* Dark burgundy */
 }
 
 body {
@@ -91,7 +91,7 @@ body {
 }
 
 .quick-links a[href*="cv.pdf"]:hover {
-    color: #fe48d1 !important; /* Pink color */
+    color: #8B0000 !important; /* Dark burgundy */
 }
 
 /* CV Link in Body Content */
@@ -103,7 +103,7 @@ body {
 }
 
 .cv-link:hover {
-    color: #fe48d1 !important; /* Pink color */
+    color: #8B0000 !important; /* Dark burgundy */
 }
 
 /* News Section */
@@ -181,38 +181,6 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-/* Container layout */
-.container {
-    display: flex;
-    min-height: 100vh;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: white;
-    box-shadow: none;
-}
-
-/* Left Sidebar */
-.sidebar {
-    width: 320px;
-    background: transparent;
-    color: #333;
-    padding: 2rem;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    overflow-y: auto;
-    border-right: 1px solid #e8e8e8;
-    line-height: 1.3;
-}
-
-/* Main Content */
-.main-content {
-    flex: 1;
-    padding: 3rem;
-    background-color: white;
-    max-width: 700px;
 }
 
 /* Responsive Design */

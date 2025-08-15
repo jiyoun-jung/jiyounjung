@@ -305,8 +305,13 @@ body {
     font-weight: 400;
     color: #8B7BB8;
     margin: 1.5rem 0 0.75rem 0;
+}
+
+/* Special styling for research-related paragraphs */
+.content-section h4 + p {
     padding-left: 0.5rem;
     border-left: 3px solid #E6E0F0;
+    margin-left: 0.5rem;
 }
 
 .content-section p {

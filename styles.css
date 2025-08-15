@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-    color: #8B0000 !important; /* Dark burgundy */
+    color: #fe48d1 !important; /* Pink color */
 }
 
 /* More specific selectors to ensure override */
@@ -34,7 +34,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 p a:hover,
 li a:hover,
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-    color: #8B0000 !important; /* Dark burgundy */
+    color: #fe48d1 !important; /* Pink color */
 }
 
 /* Exclude specific elements that should keep their styling */
@@ -59,7 +59,7 @@ body a:hover,
 main a:hover,
 section a:hover,
 div a:hover {
-    color: #8B0000 !important; /* Dark burgundy */
+    color: #fe48d1 !important; /* Pink color */
 }
 
 body {
@@ -91,7 +91,7 @@ body {
 }
 
 .quick-links a[href*="cv.pdf"]:hover {
-    color: #8B0000 !important; /* Dark burgundy */
+    color: #fe48d1 !important; /* Pink color */
 }
 
 /* CV Link in Body Content */
@@ -103,7 +103,7 @@ body {
 }
 
 .cv-link:hover {
-    color: #8B0000 !important; /* Dark burgundy */
+    color: #fe48d1 !important; /* Pink color */
 }
 
 /* News Section */

@@ -1004,6 +1004,7 @@ a:focus, button:focus {
     transition: opacity 0.3s ease;
     opacity: 0.8;
     font-size: 0.9rem;
+    margin: 0;
 }
 
 .back-link:hover {
@@ -1142,7 +1143,9 @@ a:focus, button:focus {
     box-sizing: border-box !important;
     float: none !important;
     clear: both !important;
-    min-height: 300px !important;
+    min-height: 350px !important;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 .gallery-item:hover {
@@ -1152,7 +1155,7 @@ a:focus, button:focus {
 
 .gallery-image {
     width: 100% !important;
-    height: 200px !important;
+    height: 250px !important;
     object-fit: cover !important;
     transition: transform 0.3s ease !important;
     display: block !important;
@@ -1165,7 +1168,7 @@ a:focus, button:focus {
 }
 
 .gallery-caption {
-    padding: 1.5rem !important;
+    padding: 1rem !important;
     background: white !important;
     flex: 1 !important;
 }
@@ -1186,11 +1189,10 @@ a:focus, button:focus {
 
 .gallery-footer {
     margin-top: 4rem;
-    padding: 2rem;
-    background: linear-gradient(135deg, #fafbff 0%, #f5f8ff 100%);
-    border-radius: 16px;
-    border: 2px solid #E6E0F0;
-    text-align: center;
+    padding: 0;
+    background: none;
+    border: none;
+    text-align: left;
 }
 
 .gallery-footer p {
@@ -1199,11 +1201,31 @@ a:focus, button:focus {
     line-height: 1.7;
 }
 
+.back-link {
+    display: inline-block;
+    color: #6B25FA !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    transition: opacity 0.3s ease;
+    opacity: 0.8;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.back-link:hover {
+    opacity: 1;
+    color: #6B25FA !important;
+}
+
 /* Responsive Design for Gallery */
 @media (max-width: 1024px) {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
+    }
+    
+    .gallery-image {
+        height: 250px !important;
     }
 }
 
@@ -1214,7 +1236,7 @@ a:focus, button:focus {
     }
     
     .gallery-image {
-        height: 180px;
+        height: 250px !important;
     }
     
     .gallery-intro {
@@ -1224,7 +1246,7 @@ a:focus, button:focus {
     
     .gallery-footer {
         margin-top: 3rem;
-        padding: 1.5rem;
+        padding: 0;
     }
 }
 
@@ -1235,11 +1257,11 @@ a:focus, button:focus {
     }
     
     .gallery-image {
-        height: 160px;
+        height: 200px !important;
     }
     
     .gallery-caption {
-        padding: 1rem;
+        padding: 0.75rem;
     }
     
     .gallery-caption h3 {

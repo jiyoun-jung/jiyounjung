@@ -1,0 +1,9 @@
+title: "Your Name"
+markdown: kramdown
+permalink: pretty
+# If this is a project site (not username.github.io), set baseurl: 
+# baseurl: ""   # e.g., "/my-project" (leave empty for user/organization site)
+# url: ""       # e.g., "https://username.github.io"
+exclude:
+  - README.md
+  - LICENSE

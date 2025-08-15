@@ -1,9 +1,9 @@
-title: "Your Name"
+title: "Ji Youn, Jung"
 markdown: kramdown
 permalink: pretty
 # If this is a project site (not username.github.io), set baseurl: 
-# baseurl: ""   # e.g., "/my-project" (leave empty for user/organization site)
-# url: ""       # e.g., "https://username.github.io"
+baseurl: ""   # leave empty for custom domain / user site
+url: "https://jiyounjung.com"       # primary site URL for absolute URLs
 exclude:
   - README.md
   - LICENSE

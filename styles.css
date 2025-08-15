@@ -283,13 +283,17 @@ body {
 
 /* News Section */
 .news-container {
-    max-height: 300px;
+    max-height: 400px;
     overflow-y: auto;
+    overflow-x: hidden;
     background: white;
     border-radius: 8px;
     border: 1px solid #e8e8e8;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     padding: 1rem;
+    /* Ensure scrolling works in all browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #c1c1c1 #f1f1f1;
 }
 
 .news-item {

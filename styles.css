@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-    color: #8B0000 !important; /* Dark burgundy */
+    color: #fe48d1 !important; /* Pink hover color */
 }
 
 /* Force override for all text links with higher specificity */
@@ -24,8 +24,7 @@ section a,
 div a,
 p a,
 li a,
-.content-section a,
-.quick-links a {
+.content-section a {
     color: #000000 !important;
     font-weight: 700 !important;
     text-decoration: none !important;
@@ -38,9 +37,8 @@ section a:hover,
 div a:hover,
 p a:hover,
 li a:hover,
-.content-section a:hover,
-.quick-links a:hover {
-    color: #8B0000 !important; /* Dark burgundy */
+.content-section a:hover {
+    color: #fe48d1 !important; /* Pink hover color */
 }
 
 /* Exclude specific elements that should keep their styling */
@@ -62,7 +60,7 @@ li a:hover,
 }
 
 * a:hover {
-    color: #8B0000 !important; /* Dark burgundy */
+    color: #fe48d1 !important; /* Pink hover color */
 }
 
 body {
@@ -192,18 +190,19 @@ body {
 }
 
 .quick-links a {
-    color: #555;
+    color: #000000e6;
     text-decoration: none;
     display: flex;
     align-items: center;
     padding: 0.5rem;
     border-radius: 6px;
     transition: all 0.3s ease;
+    font-weight: 400;
 }
 
 .quick-links a:hover {
     background-color: #f0f0f0;
-    color: #2c3e50;
+    color: #000000e6;
 }
 
 .quick-links i {
@@ -350,7 +349,7 @@ body {
 }
 
 .quick-links a[href*="cv.pdf"]:hover {
-    color: #8B0000 !important; /* Dark burgundy */
+    color: #fe48d1 !important; /* Pink hover color */
 }
 
 /* CV Link in Body Content */
@@ -362,7 +361,7 @@ body {
 }
 
 .cv-link:hover {
-    color: #8B0000 !important; /* Dark burgundy */
+    color: #fe48d1 !important; /* Pink hover color */
 }
 
 /* News Section */

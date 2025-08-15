@@ -5,40 +5,117 @@ permalink: /fun/
 ---
 <section class="content-section">
   <h2>What I do in my free time</h2>
-  <p class="subtitle">Click each images if you want to learn more!</p>
+  <p class="subtitle">Click each card to learn more!</p>
   
   <div class="hobby-grid">
     <!-- Gaming Section -->
-    <div class="hobby-item">
+    <div class="hobby-card" onclick="expandHobby('gaming')">
       <div class="hobby-image">
-        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop&crop=center" alt="Gaming setup with desk and equipment" class="hobby-img">
+        <img src="/contents/fun-pics/gaming-header.png" alt="Gaming setup and equipment" class="hobby-img">
       </div>
       <div class="hobby-content">
         <h3>Love Gaming 🤓🎮</h3>
         <p>I love getting inspired by trying new ways of interaction, and experience novel emotions through gaming.</p>
+        <div class="click-hint">Click to expand →</div>
       </div>
     </div>
 
     <!-- Graphic Design Section -->
-    <div class="hobby-item">
+    <div class="hobby-card" onclick="expandHobby('design')">
       <div class="hobby-image">
-        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop&crop=center" alt="Digital art and graphic design workspace" class="hobby-img">
+        <img src="/contents/fun-pics/graphicdesign-header.jpg" alt="Digital art and graphic design workspace" class="hobby-img">
       </div>
       <div class="hobby-content">
         <h3>Graphic Design 🎨🧑‍🎨</h3>
         <p>There's something so calming about focusing on making things 'aesthetic'.</p>
+        <div class="click-hint">Click to expand →</div>
       </div>
     </div>
 
     <!-- Cooking Section -->
-    <div class="hobby-item">
+    <div class="hobby-card" onclick="expandHobby('cooking')">
       <div class="hobby-image">
-        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop&crop=center" alt="Delicious cooked meal in a bowl" class="hobby-img">
+        <img src="/contents/fun-pics/cooking-header.jpg" alt="Delicious cooked meal" class="hobby-img">
       </div>
       <div class="hobby-content">
         <h3>Cooking 🧑‍🍳🍚</h3>
         <p>Trying to cook different cuisines is challenging, yet super fun!</p>
+        <div class="click-hint">Click to expand →</div>
       </div>
     </div>
   </div>
+
+  <!-- Expanded Content Sections -->
+  <div id="gaming-expanded" class="expanded-content" style="display: none;">
+    <div class="expanded-header">
+      <h3>Love Gaming 🤓🎮</h3>
+      <button class="close-btn" onclick="closeHobby('gaming')">×</button>
+    </div>
+    <div class="expanded-body">
+      <p>I love getting inspired by trying new ways of interaction, and experience novel emotions through gaming.</p>
+      <p>Some of my favorite games include:</p>
+      <ul>
+        <li>Simulation games that let me explore creative possibilities</li>
+        <li>Story-driven experiences that evoke strong emotions</li>
+        <li>Games that experiment with unique interaction mechanics</li>
+      </ul>
+      <p>Gaming helps me understand user experience design from a different perspective!</p>
+    </div>
+  </div>
+
+  <div id="design-expanded" class="expanded-content" style="display: none;">
+    <div class="expanded-header">
+      <h3>Graphic Design 🎨🧑‍🎨</h3>
+      <button class="close-btn" onclick="closeHobby('design')">×</button>
+    </div>
+    <div class="expanded-body">
+      <p>There's something so calming about focusing on making things 'aesthetic'.</p>
+      <p>My design interests include:</p>
+      <ul>
+        <li>Digital art and creative coding experiments</li>
+        <li>Typography and layout design</li>
+        <li>Creating visual systems and brand identities</li>
+      </ul>
+      <p>Design thinking influences my research approach to creating better AI tools.</p>
+    </div>
+  </div>
+
+  <div id="cooking-expanded" class="expanded-content" style="display: none;">
+    <div class="expanded-header">
+      <h3>Cooking 🧑‍🍳🍚</h3>
+      <button class="close-btn" onclick="closeHobby('cooking')">×</button>
+    </div>
+    <div class="expanded-body">
+      <p>Trying to cook different cuisines is challenging, yet super fun!</p>
+      <p>I enjoy exploring:</p>
+      <ul>
+        <li>Korean traditional dishes and modern fusion</li>
+        <li>Mediterranean and Italian cuisine</li>
+        <li>Baking and pastry making</li>
+      </ul>
+      <p>Cooking teaches me patience, precision, and the joy of creating something from scratch!</p>
+    </div>
+  </div>
 </section>
+
+<script>
+function expandHobby(hobbyType) {
+  // Hide all expanded content first
+  const allExpanded = document.querySelectorAll('.expanded-content');
+  allExpanded.forEach(content => content.style.display = 'none');
+  
+  // Show the selected hobby's expanded content
+  const expandedContent = document.getElementById(hobbyType + '-expanded');
+  if (expandedContent) {
+    expandedContent.style.display = 'block';
+    expandedContent.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+function closeHobby(hobbyType) {
+  const expandedContent = document.getElementById(hobbyType + '-expanded');
+  if (expandedContent) {
+    expandedContent.style.display = 'none';
+  }
+}
+</script>

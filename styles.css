@@ -5,6 +5,25 @@
     box-sizing: border-box;
 }
 
+/* Global Link Styling */
+a {
+    color: #000000 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8B0000 !important; /* Dark burgundy */
+}
+
+/* Exclude specific elements that should keep their styling */
+.social-icons a,
+.cv-download-btn,
+.news-container a {
+    /* These will inherit from their specific styles */
+}
+
 body {
     /* Current Font - Merriweather */
     font-family: 'Merriweather', 'Source Serif Pro', serif;
@@ -290,6 +309,18 @@ body {
 }
 
 .quick-links a[href*="cv.pdf"]:hover {
+    color: #8B0000 !important; /* Dark burgundy */
+}
+
+/* CV Link in Body Content */
+.cv-link {
+    color: #000000 !important;
+    font-weight: 700 !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cv-link:hover {
     color: #8B0000 !important; /* Dark burgundy */
 }
 

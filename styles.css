@@ -596,3 +596,108 @@ a:focus, button:focus {
     font-weight: 400 !important;
     text-decoration: none !important;
 }
+
+/* Hobby Grid Styles */
+.subtitle {
+    font-style: italic;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.hobby-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.hobby-item {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+    border-radius: 12px;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.hobby-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    border-color: #d0d0d0;
+}
+
+.hobby-image {
+    flex-shrink: 0;
+}
+
+.hobby-img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.hobby-img:hover {
+    transform: scale(1.05);
+}
+
+.hobby-content {
+    flex: 1;
+}
+
+.hobby-content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+}
+
+.hobby-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+}
+
+/* Responsive design for hobby grid */
+@media (max-width: 768px) {
+    .hobby-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .hobby-img {
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+    }
+    
+    .hobby-content h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hobby-item {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .hobby-img {
+        height: 150px;
+    }
+    
+    .hobby-content h3 {
+        font-size: 1rem;
+    }
+    
+    .hobby-content p {
+        font-size: 0.9rem;
+    }
+}

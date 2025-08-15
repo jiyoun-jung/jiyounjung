@@ -1280,93 +1280,6 @@ a:focus, button:focus {
     }
 }
 
-/* Design Page Styles */
-.design-project-card {
-    margin-bottom: 3rem;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    background: white;
-}
-
-.design-project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-}
-
-.project-link {
-    display: flex;
-    text-decoration: none !important;
-    color: inherit !important;
-    transition: all 0.3s ease;
-}
-
-.project-link:hover {
-    color: inherit !important;
-}
-
-.project-image {
-    flex-shrink: 0;
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-}
-
-.project-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.design-project-card:hover .project-img {
-    transform: scale(1.05);
-}
-
-.project-content {
-    flex: 1;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.project-content h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 1rem;
-}
-
-.project-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 1.5rem;
-}
-
-.project-meta {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.project-type {
-    background: #6B25FA;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-
-.project-year {
-    color: #666;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
 /* Portfolio Section */
 .portfolio-section {
     margin-top: 4rem;
@@ -1421,25 +1334,8 @@ a:focus, button:focus {
     color: white !important;
 }
 
-/* Responsive Design for Design Page */
+/* Responsive Design for Portfolio Section */
 @media (max-width: 768px) {
-    .project-link {
-        flex-direction: column;
-    }
-    
-    .project-image {
-        width: 100%;
-        height: 200px;
-    }
-    
-    .project-content {
-        padding: 1.5rem;
-    }
-    
-    .project-content h3 {
-        font-size: 1.2rem;
-    }
-    
     .pdf-viewer iframe {
         height: 400px;
     }
@@ -1451,20 +1347,6 @@ a:focus, button:focus {
 }
 
 @media (max-width: 480px) {
-    .project-content {
-        padding: 1rem;
-    }
-    
-    .project-content h3 {
-        font-size: 1.1rem;
-    }
-    
-    .project-meta {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-    
     .pdf-viewer iframe {
         height: 300px;
     }

@@ -1146,11 +1146,17 @@ a:focus, button:focus {
     min-height: 350px !important;
     display: flex !important;
     flex-direction: column !important;
+    text-decoration: none !important;
+    color: inherit !important;
 }
 
 .gallery-item:hover {
     transform: translateY(-5px) !important;
     box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.05) !important;
 }
 
 .gallery-image {
@@ -1161,10 +1167,6 @@ a:focus, button:focus {
     display: block !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
-}
-
-.gallery-item:hover .gallery-image {
-    transform: scale(1.05) !important;
 }
 
 .gallery-caption {

@@ -12,6 +12,13 @@
       {{ content }}
     </main>
   </div>
+  
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Last updated: {{ site.time | date: "%B %Y" }}</p>
+    </div>
+  </footer>
+  
   <script src="{{ '/script.js' | relative_url }}"></script>
 </body>
 </html>
